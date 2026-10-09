@@ -3,7 +3,9 @@ import { Page, PageHero, SectionHeading, ButtonLink, CtaBand, Photo } from '../c
 import { salon } from '../data/salon'
 import { getImageById } from '../data/images'
 
-const editorials = ['salon-about-editorial', 'salon-interior-ambience'].map((id) => getImageById(id)).filter(Boolean)
+const editorials = ['salon-about-editorial', 'salon-interior-ambience']
+  .map((id) => getImageById(id))
+  .filter((image): image is NonNullable<typeof image> => image !== null)
 
 export default function About() {
   return (

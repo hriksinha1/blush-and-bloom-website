@@ -7,6 +7,8 @@ import type { Service } from '../data/services'
 import { getImageById, imageManifest } from '../data/images'
 import { Photo } from './Photo'
 
+export { Photo } from './Photo'
+
 export function Page({
   title,
   desc,

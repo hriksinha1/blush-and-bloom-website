@@ -1,0 +1,37 @@
+:root{--ivory:#FAF7F4;--blush:#E9D3D3;--rose:#B77C83;--plum:#65394F;--espresso:#302522;--grey:#5f5957;--white:#fff;
+--display:'Cormorant Garamond Variable',Georgia,serif;--body:'Manrope Variable',system-ui,sans-serif;
+--gutter:clamp(20px,5vw,64px);--max:1280px;--r:24px;--ease:.2s ease}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--body);background:var(--ivory);color:var(--espresso);line-height:1.65}
+h1,h2,h3{font-family:var(--display);font-weight:500;line-height:1.05;margin:0 0 .5em;color:var(--espresso)}
+h1{font-size:clamp(2.8rem,8vw,5.5rem)}h2{font-size:clamp(2rem,5vw,3.5rem)}h3{font-size:1.7rem}
+a{color:var(--plum)}a:hover{color:var(--rose)}
+:focus-visible{outline:3px solid var(--plum);outline-offset:3px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gutter)}
+.sec{padding:clamp(56px,9vw,112px) 0}.alt{background:var(--blush)}
+.eyebrow{font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--grey)}
+.btn{display:inline-flex;align-items:center;min-height:48px;padding:0 28px;border-radius:999px;background:var(--plum);color:#fff;text-decoration:none;border:1px solid var(--plum);cursor:pointer;font:inherit;font-weight:600;transition:var(--ease)}
+.btn:hover{background:var(--espresso);color:#fff}.btn.ghost{background:none;color:var(--plum)}.btn.ghost:hover{background:var(--plum);color:#fff}
+.row{display:flex;gap:clamp(24px,5vw,64px);flex-wrap:wrap;align-items:center}.row>*{flex:1 1 320px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.arch{aspect-ratio:4/5;background:linear-gradient(var(--blush),#d9b8bb);border-radius:999px 999px var(--r) var(--r);max-height:620px;width:100%}
+header.top{position:sticky;top:0;z-index:20;background:var(--ivory);border-bottom:1px solid var(--blush)}
+.bar{display:flex;align-items:center;justify-content:space-between;min-height:76px;gap:16px}
+.logo{font-family:var(--display);font-size:1.7rem;font-weight:600;text-decoration:none}
+nav.main{display:flex;gap:8px;align-items:center}nav.main a{padding:12px 14px;text-decoration:none;color:var(--espresso);font-size:.95rem}
+nav.main a.active{color:var(--plum);font-weight:600;text-decoration:underline;text-underline-offset:6px}
+.menu{display:none;width:48px;height:48px;border-radius:50%;border:1px solid var(--plum);background:none;color:var(--plum);cursor:pointer}
+@media(max-width:860px){.menu{display:grid;place-items:center}.hide-m{display:none}
+nav.main{display:none;position:absolute;left:0;right:0;top:100%;background:var(--ivory);flex-direction:column;align-items:stretch;padding:12px var(--gutter) 24px;border-bottom:1px solid var(--blush)}
+nav.main.open{display:flex}nav.main a{padding:16px 0;font-size:1.1rem}}
+footer.foot{background:var(--espresso);color:var(--blush);padding:56px 0}footer.foot a{color:var(--blush)}
+.acc{border-top:1px solid var(--rose)}.acc button{all:unset;box-sizing:border-box;width:100%;display:flex;justify-content:space-between;gap:16px;padding:22px 0;cursor:pointer;font-family:var(--display);font-size:1.5rem}
+.acc button:focus-visible{outline:3px solid var(--plum)}.acc p{margin:0 0 22px;max-width:62ch}
+.grid{columns:3 260px;column-gap:16px}.grid button{all:unset;display:block;width:100%;margin-bottom:16px;cursor:pointer}.grid img{width:100%;display:block;border-radius:var(--r)}
+.empty{border:1px dashed var(--rose);border-radius:var(--r);padding:40px;text-align:center;background:var(--white)}
+.lb{position:fixed;inset:0;background:rgba(48,37,34,.94);z-index:50;display:grid;place-items:center;padding:24px}
+.lb img{max-width:100%;max-height:78vh;border-radius:12px}.lb .ctl{position:absolute;display:flex;gap:8px;top:16px;right:16px}
+.lb button{min-width:48px;min-height:48px;border-radius:50%;border:0;background:var(--ivory);cursor:pointer}
+form.f{display:grid;gap:18px;max-width:560px}label{display:grid;gap:6px;font-weight:600}
+input,textarea{font:inherit;padding:14px;border:1px solid var(--grey);border-radius:12px;background:#fff}.err{color:#9b1c31;font-weight:500}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}

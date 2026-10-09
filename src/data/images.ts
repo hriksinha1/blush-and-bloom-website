@@ -1,0 +1,177 @@
+export type ImageManifestItem = {
+  id: string
+  src: string
+  alt: string
+  width: number
+  height: number
+  focal?: string
+  credit: string
+  sourceUrl: string
+  licence: string
+  demo: boolean
+}
+
+export const imageManifest: ImageManifestItem[] = [
+  {
+    id: 'salon-interior-hero',
+    src: '/images/salon-interior-hero.webp',
+    alt: 'Warm salon interior with soft natural light and a calm styling space.',
+    width: 1600,
+    height: 1200,
+    focal: '50% 44%',
+    credit: 'Unsplash',
+    sourceUrl: 'https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=1600&q=80',
+    licence: 'Unsplash license',
+    demo: true,
+  },
+  {
+    id: 'salon-interior-ambience',
+    src: '/images/salon-interior-ambience.webp',
+    alt: 'Salon interior showing a gentle, welcoming beauty environment.',
+    width: 1200,
+    height: 1600,
+    focal: '50% 30%',
+    credit: 'Unsplash',
+    sourceUrl: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=80',
+    licence: 'Unsplash license',
+    demo: true,
+  },
+  {
+    id: 'salon-styling-stations',
+    src: '/images/salon-styling-stations.webp',
+    alt: 'Hair styling stations with mirrors and soft neutral tones.',
+    width: 1200,
+    height: 900,
+    focal: '50% 50%',
+    credit: 'Unsplash',
+    sourceUrl: 'https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1200&q=80',
+    licence: 'Unsplash license',
+    demo: true,
+  },
+  {
+    id: 'salon-chair-detail',
+    src: '/images/salon-chair-detail.webp',
+    alt: 'Saloon chair with a soft editorial beauty feel.',
+    width: 900,
+    height: 1200,
+    focal: '50% 40%',
+    credit: 'Unsplash',
+    sourceUrl: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=900&q=80',
+    licence: 'Unsplash license',
+    demo: true,
+  },
+  {
+    id: 'salon-mirror-detail',
+    src: '/images/salon-mirror-detail.webp',
+    alt: 'Mirror and salon styling setup in warm natural light.',
+    width: 1200,
+    height: 1500,
+    focal: '50% 40%',
+    credit: 'Unsplash',
+    sourceUrl: 'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1200&q=80',
+    licence: 'Unsplash license',
+    demo: true,
+  },
+  {
+    id: 'hair-colour-detail',
+    src: '/images/hair-colour-detail.webp',
+    alt: 'Close-up of hair colour detail with soft warm tones.',
+    width: 1000,
+    height: 1200,
+    focal: '50% 55%',
+    credit: 'Unsplash',
+    sourceUrl: 'https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=1000&q=80',
+    licence: 'Unsplash license',
+    demo: true,
+  },
+  {
+    id: 'makeup-brushes-closeup',
+    src: '/images/makeup-brushes-closeup.webp',
+    alt: 'Makeup brushes arranged in a close-up beauty composition.',
+    width: 1200,
+    height: 1000,
+    focal: '50% 50%',
+    credit: 'Unsplash',
+    sourceUrl: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=1200&q=80',
+    licence: 'Unsplash license',
+    demo: true,
+  },
+  {
+    id: 'bridal-hair-editorial',
+    src: '/images/bridal-hair-editorial.webp',
+    alt: 'Editorial bridal hair styling photography in a warm neutral palette.',
+    width: 1200,
+    height: 1600,
+    focal: '50% 40%',
+    credit: 'Unsplash',
+    sourceUrl: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=80',
+    licence: 'Unsplash license',
+    demo: true,
+  },
+  {
+    id: 'nail-care-detail',
+    src: '/images/nail-care-detail.webp',
+    alt: 'Nail care detail in a minimal, elevated beauty setting.',
+    width: 1000,
+    height: 1400,
+    focal: '50% 45%',
+    credit: 'Unsplash',
+    sourceUrl: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=1000&q=80',
+    licence: 'Unsplash license',
+    demo: true,
+  },
+  {
+    id: 'skincare-facial-detail',
+    src: '/images/skincare-facial-detail.webp',
+    alt: 'Facial skincare detail with a calm, minimal beauty look.',
+    width: 1200,
+    height: 1400,
+    focal: '50% 30%',
+    credit: 'Unsplash',
+    sourceUrl: 'https://images.unsplash.com/photo-1556228578-8c89e6adf883?auto=format&fit=crop&w=1200&q=80',
+    licence: 'Unsplash license',
+    demo: true,
+  },
+  {
+    id: 'floral-beauty-flatlay',
+    src: '/images/floral-beauty-flatlay.webp',
+    alt: 'Blush-toned beauty flat lay with flowers, textures and warm tones.',
+    width: 1200,
+    height: 1200,
+    focal: '50% 50%',
+    credit: 'Unsplash',
+    sourceUrl: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=1200&q=80',
+    licence: 'Unsplash license',
+    demo: true,
+  },
+  {
+    id: 'salon-about-editorial',
+    src: '/images/salon-about-editorial.webp',
+    alt: 'Editorial salon photograph used for the about section.',
+    width: 1200,
+    height: 1400,
+    focal: '50% 35%',
+    credit: 'Unsplash',
+    sourceUrl: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=80',
+    licence: 'Unsplash license',
+    demo: true,
+  },
+  {
+    id: 'contact-salon-editorial',
+    src: '/images/contact-salon-editorial.webp',
+    alt: 'A warm salon setting used for contact and conversion moments.',
+    width: 1600,
+    height: 1100,
+    focal: '50% 35%',
+    credit: 'Unsplash',
+    sourceUrl: 'https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=1600&q=80',
+    licence: 'Unsplash license',
+    demo: true,
+  },
+]
+
+export const imageMap = new Map(imageManifest.map((image) => [image.id, image]))
+
+export function getImageById(id: string) {
+  return imageMap.get(id) ?? null
+}
